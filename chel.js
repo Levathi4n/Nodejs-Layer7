@@ -13,7 +13,7 @@ const net = require("net");
  process.on('uncaughtException', function (exception) {
   });
 
- if (process.argv.length < 7){console.log(`Usage: node HTTP-Flood.js target time rate core_cpu proxyfile`); process.exit();}
+ if (process.argv.length < 7){console.log(`Usage: node chel.js target time rate core_cpu proxyfile`); process.exit();}
  const headers = {};
   function readLines(filePath) {
      return fs.readFileSync(filePath, "utf-8").toString().split(/\r?\n/);
